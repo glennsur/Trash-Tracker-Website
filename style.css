@@ -247,21 +247,51 @@ footer .wrapper {
 
 footer .wrapper section {
   background-color: transparent;
-  width: 30%;
+  width:  30%;
   height: 100%;
   color: white;
   flex-direction: column;
+}
 
+.bold {
+  font-weight: 700 !important;
+  font-size: 22px;
+  text-transform: uppercase;
+  margin: 6px 0;
 }
 
 footer .wrapper section span {
   width: 100%;
+  font-size: 18px;
+  line-height: 2;
+  font-weight: 500;
+  flex-direction: column;
+  display: flex;
 }
 
-.bold {
-  font-weight: 700;
-  font-size: 30px;
+footer .wrapper section span ul li a {
+  color: white;
+  text-transform: uppercase;
+  position: relative;
 }
+
+footer .wrapper section span ul li a::before{
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -5px;
+  height: 2px;
+  background-color: yellow;
+  transition: transform 0.3s ease-in-out;
+  transform: scaleX(0);
+}
+
+footer .wrapper section span ul li a:hover::before,
+footer .wrapper section span ul li a:focus::before {
+  transform: scaleX(1);
+}
+
 footer .wrapper img {
   width: 20%;
 }
