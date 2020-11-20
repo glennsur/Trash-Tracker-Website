@@ -1,7 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;800&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700;800&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;600;700;800&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
 
 *, *::before, *::after {
   margin: 0;
@@ -12,17 +10,24 @@
 }
 
 body {
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Lexend Deca', 'PT sans', 'Open Sans', sans-serif;
 }
 
 header {
-  background-color: #212146;
+  background-color: #ffffff;
+  box-shadow: 0 0 80px #181818;
 }
 
 .wrapper {
   margin: auto;
   width: 96vw;
   max-width: 1280px;
+}
+.top {
+  margin-top: -3px;
+  background-color: #1160ff;
+  width: 100%;
+  height:3px;
 }
 
 .header-container {
@@ -32,40 +37,55 @@ header {
 }
 
 .logo-container {
-  width: 10%;
+  width: 7%;
   overflow: hidden;
   display: flex;
   align-items: center;
   justify-content: center;
+  overflow: visible;
 }
 
-.logo-container a img {
-  width: 60%;
+.logo-container a {
+  display: flex;
+  justify-content: center;
 }
+
+
+.logo-container a img {
+  width: 60px;
+}
+
+.header-container .nav-header {
+  display: flex;
+  justify-content: space-between;
+}
+
 
 .nav-header {
   height: 100%;
-  width: 65%;
+  width: auto;
   margin-top: auto;
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 
 .nav-header ul {
   width: 100%;
   display: flex;
   align-items: center;
-  justify-content: space-between;
 }
 
 .nav-header ul li {
-  display: flex;
+  margin-left: 70px;
 }
 
 .nav-header ul li a {
   font-weight: 700;
-  padding: 12px 20px;
-  color: white;
+  /* padding: 12px 20px; */
+  color: #000000;
+  font-size: 20px;
+
 }
 
 .nav-header ul li {
@@ -73,7 +93,7 @@ header {
 }
 
 .nav-header ul li a:hover {
-  color: rgb(153, 218, 248);
+  color: #1160ff;
 }
 
 .nav-header ul li a::before{
@@ -81,9 +101,9 @@ header {
   position: absolute;
   left: 0;
   right: 0;
-  bottom: 0;
-  height: 1px;
-  background-color: rgb(153, 218, 248);
+  bottom: -15%;
+  height: 2px;
+  background-color:  #1160ff;
   transition: transform 0.3s ease-in-out;
   transform: scaleX(0);
 }
@@ -93,26 +113,89 @@ header {
   transform: scaleX(1);
 }
 
+.menu {
+  display: none;
+  align-self: center;
+  font-size: 24px;
+  align-items: center;
+  position: relative;
+}
+.menu p {
+  font-weight: 700;
+  padding-left: 10px;
+}
+
+.invisible-checkbox {
+  display: none;
+  -webkit-appearance: none;
+  cursor: pointer;
+  width: 100px;
+  height: 90px;
+  background: red;
+  align-self: center;
+  position: absolute;
+  opacity: 0.5;
+}
+
+
+@media (max-width: 760px) {
+  .wrapper {
+    width: 90vw;
+  }
+  .nav-header ul {
+    display: none;
+  }
+  .menu {
+    display: flex;
+  }
+  .invisible-checkbox {
+    display: flex;
+  }
+
+  .logo-container a img {
+    width: 60px;
+  }
+
+  footer .wrapper {
+    flex-direction: column;
+  }
+
+
+
+
+
+}
+
+
 /* header ends */
 
 /* main starts */
 
-/* test */
 
 .real-section-1 {
   width: 100%;
   height: 850px;
   position: relative;
   overflow: hidden;
+  text-align: center;
 }
 
 .real-section-1 img {
-  position: absolute;
-  top: -18%;
+  position: relative;
   left: 0;
   width: 100%;
   z-index: -1;
+
 }
+
+@media (max-width: 1380px) {
+  .real-section-1 img {
+    width: 1380px;
+  }
+
+}
+
+
 
 .real-section-1 .container {
   position: absolute;
@@ -131,8 +214,9 @@ header {
   width: 100%;
   height: 100%;
   /* background-image: linear-gradient(rgb(33, 33, 70), rgba(0, 0, 0, 0.6)); */
-  background-image: radial-gradient(rgba(33, 33, 70, .7), rgba(33, 33, 70, .7), black);
-  opacity: .7;
+  /* background-image: radial-gradient(rgba(33, 33, 70, .7), rgba(33, 33, 70, .7), black); */
+
+
 
 }
 
@@ -140,23 +224,30 @@ header {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 100%;
+  height: 150%;
+
 }
 
 
 .real-section-1 .container .wrapper .text {
-  width: 80%;
-  height: 300px;
+
+  width: 600px;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  color: white;
+  color: #1160ff;
   z-index: 1;
   text-align: center;
   font-size: 40px;
-  /* text-shadow: 0 0 25px #e309ea; */
-  text-shadow: 0 0 20px #000000;
+  text-transform: uppercase;
+  font-weight: 900;
+
+  font-family: 'Lexend Deca', sans-serif;
+  background-color: #ffffff;
+  box-shadow: 0 0 50px rgba(0,0,0,0.3);
+
+
 
 }
 
@@ -179,8 +270,11 @@ section .wrapper {
 
 }
 
+/* SECTION 2 */
+
+
 section:nth-child(1) {
-  background-color: #ffffff;
+  background-color: white;
 }
 
 section:nth-child(1) .text {
@@ -190,11 +284,13 @@ section:nth-child(1) .text {
   width: 40%;
   flex-direction: column;
   display: flex;
+  color: black;
 }
 section:nth-child(1) .text span:nth-child(2) {
   font-size: 50px;
   width: 100%;
   font-weight: 700;
+  color: black;
 }
 section:nth-child(1) .text span:nth-child(3) {
   margin: 20px 0;
@@ -202,6 +298,7 @@ section:nth-child(1) .text span:nth-child(3) {
   width: 100%;
   font-weight: 400;
   line-height: 1.8;
+  color: black;
 }
 .text button {
   text-decoration: none;
@@ -209,10 +306,10 @@ section:nth-child(1) .text span:nth-child(3) {
   padding: 15px 40px;
   border: none;
   cursor: pointer;
-  background-color: black;
+  background-color: #1160ff;
   font-weight: 700;
   font-size: 20px;
-  color: #ffffff;
+  color: white;
   position: relative;
 }
 .text button::before{
@@ -237,10 +334,10 @@ section:nth-child(1) .text span:nth-child(3) {
 }
 
 
-/* SECTION 2 */
+/* SECTION 1 */
 
 section:nth-child(2) {
-  background-color: #212146;
+  background-color: #dedede;
   height: 500px;
 }
 
@@ -250,7 +347,7 @@ section:nth-child(2) .wrapper {
 }
 
 section:nth-child(2) .text {
-  color: white;
+  color: black;
   font-size: 50px;
   font-weight: 700;
   display: inline;
@@ -265,7 +362,12 @@ section:nth-child(2) .text span:nth-child(2) {
   font-size: 30px;
   width: 100%;
   line-height: 1.6;
+  color: black;
 }
+
+
+
+
 
 /* SECTION 3 */
 
@@ -297,7 +399,7 @@ section:nth-child(3) .text span:nth-child(3) {
 /* FOOTER */
 
 footer {
-  background-color: #212146;
+  background-color: #0a0a0a;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -325,6 +427,7 @@ footer .wrapper section {
   font-size: 22px;
   text-transform: uppercase;
   margin: 6px 0;
+  color: #1160ff;
 }
 
 footer .wrapper section span {
