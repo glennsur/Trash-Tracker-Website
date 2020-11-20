@@ -303,7 +303,7 @@ section:nth-child(1) .text span:nth-child(3) {
 .text button {
   text-decoration: none;
   display: inline;
-  padding: 15px 40px;
+  padding: 15px 30px;
   border: none;
   cursor: pointer;
   background-color: #1160ff;
@@ -311,6 +311,7 @@ section:nth-child(1) .text span:nth-child(3) {
   font-size: 20px;
   color: white;
   position: relative;
+  border-radius: 30px;
 }
 .text button::before{
   content: "";
