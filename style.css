@@ -11,6 +11,7 @@
 
 body {
   font-family: 'Lexend Deca', 'PT sans', 'Open Sans', sans-serif;
+  position: relative;
 }
 
 header {
@@ -128,15 +129,15 @@ header {
 }
 
 .invisible-checkbox {
-  position: absolute;
   z-index: 1000;
   display: none;
   align-self: center;
-  width: 100px;
+  width: 150px;
   height: 90px;
   cursor: pointer;
   opacity: .5;
-  background: red;
+  position: absolute;
+  right: -6%;
 
   -webkit-appearance: none;
 }
@@ -154,6 +155,12 @@ header {
     position: relative;
   }
 
+  header {
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+  }
+
 
   .logo-container {
     position: absolute;
@@ -165,10 +172,7 @@ header {
     display: none ;
   }
 
-  .invisible-checkbox {
-    right: -2%;
-    display: flex;
-  }
+
 
 
 
@@ -187,9 +191,6 @@ header {
     transform: translateY(-100vh);
   }
 
-  /* .nav-header .invisible-checkbox:checked + .x-button {
-    display: flex ;
-  } */
   .nav-header .invisible-checkbox:checked + ul {
     transform: translateY(20vh);
   }
@@ -197,6 +198,11 @@ header {
   .nav-header .invisible-checkbox:checked + ul::after {
     animation: pop-in-animation 1s;
   }
+
+  .nav-header .invisible-checkbox:checked + .logo-img {
+    background-image: url(IMG/unlogo2.png);
+  }
+
 
 
   .nav-header ul::after {
@@ -210,7 +216,12 @@ header {
     justify-content: center;
     width: 100px;
     height: 90px;
-    content: 'X';
+    content: '';
+    background-image: url(IMG/X.png);
+    background-size: 30%;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: white;
     transform: translateY(-20vh);
     opacity: 1;
   }
@@ -239,6 +250,10 @@ header {
     background: #0a0d0e;
   }
 
+  .invisible-checkbox {
+    display: flex;
+  }
+
   .nav-header ul li {
     z-index: 10;
     margin: 0;
@@ -251,11 +266,16 @@ header {
 
 
 
+
+
+
+
+
   .hamburger {
     position: absolute !important;
     display: flex;
     height: 100%;
-    padding-right: 10px;
+    padding-right: 5px;
   }
 
   .logo-container a img {
@@ -276,6 +296,8 @@ header {
   footer .wrapper section a .white-space {
     display: none;
   }
+
+
 }
 
 
@@ -293,6 +315,7 @@ header {
   width: 100%;
   height: 850px;
   text-align: center;
+
 }
 
 .real-section-1 img {
@@ -300,11 +323,13 @@ header {
   z-index: -1;
   left: 0;
   width: 100%;
+  object-fit: cover;
+  height: 850px;
 }
 
 @media (max-width: 1380px) {
   .real-section-1 img {
-    width: 1380px;
+    width: 100%;
   }
 }
 
