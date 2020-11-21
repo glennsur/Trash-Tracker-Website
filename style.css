@@ -169,7 +169,6 @@ header {
     z-index: 100;
   }
 
-
   .logo-container {
     position: absolute;
     width: 100px;
@@ -179,11 +178,7 @@ header {
   .nav-header ul {
     display: none ;
   }
-
-
-
-
-
+  
   .nav-header ul {
     position: absolute;
     position: fixed;
@@ -210,9 +205,7 @@ header {
   .nav-header .invisible-checkbox:checked + .logo-img {
     background-image: url(IMG/unlogo2.png);
   }
-
-
-
+  
   .nav-header ul::after {
     font-size: 50px;
     font-weight: 900;
@@ -234,7 +227,6 @@ header {
     opacity: 1;
   }
 
-
   @keyframes pop-in-animation {
     0% {
       opacity: 0;
@@ -243,10 +235,7 @@ header {
       opacity: 1;
     }
   }
-
-
-
-
+  
   .nav-header ul::before {
     position: absolute;
     z-index: 1;
