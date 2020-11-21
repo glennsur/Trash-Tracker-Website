@@ -345,6 +345,8 @@ header {
       text-align: center;
     }
 
+
+
   footer .wrapper section a .white-space {
     display: none;
   }
@@ -603,6 +605,7 @@ footer .wrapper section {
   height: 100%;
   color: white;
   background-color: transparent;
+  letter-spacing: 1.5px;
 }
 
 .bold {
@@ -612,6 +615,7 @@ footer .wrapper section {
   text-transform: uppercase;
   color: #ffffff;
   left: 0;
+  letter-spacing: 1.5px;
 }
 
 footer .wrapper section div {
@@ -657,6 +661,7 @@ footer .wrapper section div ul li a:focus::before {
 
 footer .wrapper img {
   width: 20%;
+  margin-left: -8vw;
 }
 
 
@@ -665,6 +670,7 @@ footer .wrapper img {
     width: 25%;
     display: flex;
     transform: translateY(16px);
+
   }
 
   footer .wrapper section {
@@ -674,5 +680,9 @@ footer .wrapper img {
 
   footer .wrapper section div {
     margin: auto;
+  }
+  footer .wrapper img {
+    width: 20%;
+    margin-left: 0;
   }
 }
