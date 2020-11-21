@@ -128,6 +128,14 @@ header {
   padding-left: 10px;
 }
 
+.read-more-a {
+  font-weight: 700;
+  font-size: 26px;
+  color: #0a0d0e;
+  margin: 0 0 20px 0;
+  display: none;
+}
+
 .invisible-checkbox {
   z-index: 1000;
   display: none;
@@ -187,12 +195,12 @@ header {
     justify-content: space-between;
     width: 100vw;
     height: 60vh;
-    transition: transform 1s ease-in-out;
     transform: translateY(-100vh);
   }
 
   .nav-header .invisible-checkbox:checked + ul {
     transform: translateY(20vh);
+    transition: transform 1s ease-in-out;
   }
 
   .nav-header .invisible-checkbox:checked + ul::after {
@@ -265,10 +273,45 @@ header {
   }
 
 
+  main section:nth-child(1) .wrapper,
+  main section:nth-child(3) .wrapper {
+    flex-direction: column;
+  }
 
+  main section {
+    height: auto;
+    padding: 50px 0;
+  }
 
+  main section .text button {
+    margin: -10px 0 30px 0;
+    display: none;
+  }
 
+  .read-more-a {
+    display: flex;
+  }
 
+    main section .wrapper .text {
+      width: 100%;
+    }
+
+  section:nth-child(1) .text,
+  section:nth-child(2) .text,
+  section:nth-child(3) .text,
+  section:nth-child(4) .text {
+    width: 100%;
+    display: flex;
+  }
+
+  section:nth-child(1) .wrapper img,
+  section:nth-child(3) .wrapper img {
+    width: 100%; !important;
+  }
+
+    section:nth-child(3) .wrapper img {
+      margin-bottom: 40px;
+    }
 
 
   .hamburger {
@@ -286,6 +329,11 @@ header {
   footer {
     height: 100% !important;
   }
+
+  footer .wrapper .text {
+    width: 100%;
+  }
+
 
   footer .wrapper {
     display: flex;
@@ -510,11 +558,13 @@ section:nth-child(3) .text {
   display: flex;
   flex-direction: column;
   width: 40%;
+  color: #0a0d0e;
 }
 section:nth-child(3) .text span:nth-child(2) {
   font-size: 50px;
   font-weight: 700;
   width: 100%;
+  color: #0a0d0e;
 }
 section:nth-child(3) .text span:nth-child(3) {
   font-size: 18px;
@@ -522,6 +572,7 @@ section:nth-child(3) .text span:nth-child(3) {
   line-height: 1.8;
   width: 100%;
   margin: 20px 0;
+  color: #0a0d0e;
 }
 
 /* FOOTER */
@@ -569,8 +620,8 @@ footer .wrapper section span {
 
 footer .wrapper section span ul li a {
   position: relative;
-  text-transform: uppercase;
   color: white;
+
 }
 
 footer .wrapper section span ul li a::before {
