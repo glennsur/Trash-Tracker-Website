@@ -341,6 +341,10 @@ header {
     flex-direction: column !important;
   }
 
+    footer .wrapper section {
+      text-align: center;
+    }
+
   footer .wrapper section a .white-space {
     display: none;
   }
@@ -606,10 +610,11 @@ footer .wrapper section {
   font-weight: 700 !important;
   margin: 6px 0;
   text-transform: uppercase;
-  color: white;
+  color: #ffffff;
+  left: 0;
 }
 
-footer .wrapper section span {
+footer .wrapper section div {
   font-size: 18px;
   font-weight: 500;
   line-height: 2;
@@ -617,14 +622,23 @@ footer .wrapper section span {
   flex-direction: column;
   width: 100%;
 }
+footer .wrapper section div img {
+  width: 50%;
+  display: flex;
+  align-self: center;
+  justify-content: center;
+  transform: translateY(16px);
+}
 
-footer .wrapper section span ul li a {
+
+
+footer .wrapper section div ul li a {
   position: relative;
   color: white;
 
 }
 
-footer .wrapper section span ul li a::before {
+footer .wrapper section div ul li a::before {
   position: absolute;
   right: 0;
   bottom: -5px;
@@ -636,10 +650,29 @@ footer .wrapper section span ul li a::before {
   background-color: white;
 }
 
-footer .wrapper section span ul li a:hover::before, footer .wrapper section span ul li a:focus::before {
+footer .wrapper section div ul li a:hover::before,
+footer .wrapper section div ul li a:focus::before {
   transform: scaleX(1);
 }
 
 footer .wrapper img {
   width: 20%;
+}
+
+
+@media (max-width: 760px) {
+  footer .wrapper section div img {
+    width: 25%;
+    display: flex;
+    transform: translateY(16px);
+  }
+
+  footer .wrapper section {
+    width: 100%;
+    padding: 20px 0;
+  }
+
+  footer .wrapper section div {
+    margin: auto;
+  }
 }
