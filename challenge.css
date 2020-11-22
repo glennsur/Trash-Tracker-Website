@@ -5,7 +5,7 @@
     position: relative;
     overflow: hidden;
     width: 100%;
-    height: 450px;
+    height: 850px;
     text-align: center;
 }
 .real-section-1 img {
@@ -14,7 +14,7 @@
     left: 0;
     width: 100%;
     object-fit: cover;
-    height: 450px;
+    height: 850px;
 }
 .real-section-1 .container {
     position: absolute;
@@ -55,6 +55,62 @@
     box-shadow: 0 0 50px rgba(0,0,0,.3);
 }
 
+/* =========== Image 2 =========== */
+
+.real-section-2 {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 450px;
+    text-align: center;
+}
+.real-section-2 img {
+    position: relative;
+    z-index: -1;
+    left: 0;
+    width: 100%;
+    object-fit: cover;
+    height: 450px;
+}
+.real-section-2 .container {
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.real-section-2 .container::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    content: '';
+}
+.real-section-2 .container .wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 150%;
+}
+.real-section-2 .container .wrapper .text {
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 40px;
+    font-weight: 900;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    width: 600px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #0a0d0e;
+    background-color: #FFF;
+    box-shadow: 0 0 50px rgba(0,0,0,.3);
+}
+
 /* =========== Sections =========== */
 
 section {
@@ -76,16 +132,18 @@ section .wrapper {
 
 section:nth-child(1) {
     background-color: white;
+    height: 500px;
 }
 
 section:nth-child(1) .text {
     font-size: 16px;
     font-weight: 800;
-    display: inline;
     display: flex;
     flex-direction: column;
-    width: 100%;
+    width: 75%;
     color: #0a0d0e;
+    transform: translateY(-60px);
+    margin: auto;
 }
 section:nth-child(1) .text span:nth-child(2) {
     font-size: 50px;
@@ -102,10 +160,45 @@ section:nth-child(1) .text span:nth-child(3) {
     color: #0a0d0e;
 }
 
+/* =========== Section 2 =========== */
+
+section:nth-child(3) {
+    background-color: white;
+    height: 500px;
+}
+
+section:nth-child(3) .text {
+    font-size: 16px;
+    font-weight: 800;
+    display: flex;
+    flex-direction: column;
+    width: 75%;
+    color: #0a0d0e;
+    transform: translateY(-60px);
+    margin: auto;
+}
+section:nth-child(3) .text span:nth-child(2) {
+    font-size: 50px;
+    font-weight: 700;
+    width: 100%;
+    color: #0a0d0e;
+}
+section:nth-child(3) .text span:nth-child(3) {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.8;
+    width: 100%;
+    margin: 20px 0;
+    color: #0a0d0e;
+}
+
 /* =========== Media Query =========== */
 
 @media (max-width: 1380px) {
     .real-section-1 img {
+        width: 100%;
+    }
+    .real-section-2 img {
         width: 100%;
     }
 }
