@@ -209,6 +209,7 @@ main section:nth-child(2) .text span:nth-child(2) {
 
 
 /* =========== Cards =========== */
+
 main section:nth-child(2) {
     background-color: white;
     min-height: 500px;
@@ -218,7 +219,9 @@ main section:nth-child(2) {
     transform: translateY(-200px);
     /* margin-top: -200px; */
 }
-
+.info-box:hover {
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+}
 .info-box {
     background-color: white;
     display: flex;

@@ -11,13 +11,20 @@ main .wrapper section {
   padding: 50px;
 }
 
-main .wrapper section:nth-child(1),
-main .wrapper section:nth-child(3) {
-  background-color: #ECF0F1;
+.page-title {
+  font-size: 40px;
+  font-weight: 700;
+  padding-bottom: 30px;
+  color: #0A0D0E;
 }
 
 main .wrapper section:nth-child(2),
 main .wrapper section:nth-child(4) {
+  background-color: #ECF0F1;
+}
+
+main .wrapper section:nth-child(3),
+main .wrapper section:nth-child(5) {
   background-color: white;
 }
 
