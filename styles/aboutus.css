@@ -1,4 +1,3 @@
-
 main {
   padding: 100px 0;
 }
@@ -6,52 +5,84 @@ main {
 main .wrapper section {
   width: 100%;
   height: 300px;
-  background-color: red;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 50px;
 }
 
-main .wrapper section:nth-child(2),
-main .wrapper section:nth-child(4) {
-  background-color: blue;
+main .wrapper section:nth-child(1),
+main .wrapper section:nth-child(3) {
+  background-color: #ECF0F1;
 }
 
-main .wrapper section img {
+main .wrapper section:nth-child(2),
+main .wrapper section:nth-child(4) {
+  background-color: white;
+}
+
+section .image-container {
   width: 16%;
   height: 100%;
 }
 
-main .wrapper section .text {
+section .image-container img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+
+.real-section-1 img {
+  position: relative;
+  z-index: -1;
+  left: 0;
+  width: 100%;
+  object-fit: cover;
+  height: 850px;
+}
+
+.text {
   width: 80%;
   height: 100%;
-  background-color: aqua;
   display: flex;
 
 }
 
-main .wrapper section .text .contact-name,
-main .wrapper section .text .contact-person-description {
+.text .contact-name,
+.text .contact-person-description {
   height: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-main .wrapper section .text .contact-name {
+.text .contact-name {
   width: 70%;
-  background-color: orange;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
 }
 
-main .wrapper section .text .contact-person-description {
+.text .contact-name span:nth-child(1) {
+  margin-bottom: 20px;
+}
+
+.text .name-title {
+  font-weight: 700;
+  font-size: 20px;
+}
+
+.text .contact-person-description {
   width: 30%;
-  background-color: indigo;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
 }
 
-
-
-
+.text .contact-person-description li:nth-child(1) {
+  margin-bottom: 10px;
+}
 
 
 

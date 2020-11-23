@@ -159,7 +159,6 @@ header {
   height: 90px;
   cursor: pointer;
   opacity: .5;
-
   -webkit-appearance: none;
 }
 
@@ -211,6 +210,42 @@ footer .wrapper section div img {
   width: 50%;
   transform: translateY(16px);
 }
+
+/* footer .wrapper section nav ul {
+  position: relative;
+} */
+
+/* footer .wrapper section nav ul::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 2%;
+  width: 110px;
+  height: 100%;
+  background: yellow;
+  z-index: 10000000;
+} */
+.nav-header ul::after {
+  font-size: 50px;
+  font-weight: 900;
+  position: absolute;
+  z-index: 1;
+  right: 3%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100px;
+  height: 90px;
+  content: '';
+  background-image: url(../IMG/blue-water.jpg);
+  background-size: 30%;
+  background-repeat: no-repeat;
+  background-position: center;
+  transform: translateY(-20vh);
+  opacity: 1;
+}
+
+
 
 footer .wrapper section div ul li a {
   position: relative;

@@ -49,6 +49,8 @@
       <workItem from="1605990645150" duration="600000" />
       <workItem from="1606044517147" duration="4927000" />
       <workItem from="1606130785938" duration="214000" />
+      <workItem from="1606131104047" duration="244000" />
+      <workItem from="1606131354522" duration="6164000" />
     </task>
     <servers />
   </component>
@@ -60,10 +62,14 @@
       <screen x="-1920" y="0" width="1920" height="1040" />
     </state>
     <state x="-1217" y="321" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1605722421907" />
-    <state x="404" y="161" key="SettingsEditor" timestamp="1606130999048">
+    <state x="540" y="262" key="IDE.errors.dialog" timestamp="1606131128043">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="540" y="262" key="IDE.errors.dialog/0.0.1920.1040@0.0.1920.1040" timestamp="1606131128043" />
+    <state x="404" y="161" key="SettingsEditor" timestamp="1606131347197">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="362" y="159" key="SettingsEditor/0.0.1722.1030@0.0.1722.1030" timestamp="1605611972740" />
-    <state x="404" y="161" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1606130999048" />
+    <state x="404" y="161" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1606131347197" />
   </component>
 </project>
