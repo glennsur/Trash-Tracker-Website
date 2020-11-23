@@ -95,18 +95,19 @@ section:nth-child(1) {
 section:nth-child(1) .text {
   font-size: 16px;
   font-weight: 800;
-  display: inline;
   display: flex;
   flex-direction: column;
   width: 40%;
   color: #0a0d0e;
 }
+
 section:nth-child(1) .text span:nth-child(2) {
   font-size: 50px;
   font-weight: 700;
   width: 100%;
   color: #0a0d0e;
 }
+
 section:nth-child(1) .text span:nth-child(3) {
   font-size: 18px;
   font-weight: 400;
@@ -115,6 +116,7 @@ section:nth-child(1) .text span:nth-child(3) {
   margin: 20px 0;
   color: #0a0d0e;
 }
+
 .text button {
   font-size: 20px;
   font-weight: 700;
@@ -173,18 +175,19 @@ section:nth-child(3) {
 section:nth-child(3) .text {
   font-size: 16px;
   font-weight: 800;
-  display: inline;
   display: flex;
   flex-direction: column;
   width: 40%;
   color: #0a0d0e;
 }
+
 section:nth-child(3) .text span:nth-child(2) {
   font-size: 50px;
   font-weight: 700;
   width: 100%;
   color: #0a0d0e;
 }
+
 section:nth-child(3) .text span:nth-child(3) {
   font-size: 18px;
   font-weight: 400;
@@ -208,12 +211,12 @@ section:nth-child(3) .text span:nth-child(3) {
     flex-direction: column;
   }
 
-  main section {
+  section {
     height: auto;
     padding: 50px 0;
   }
 
-  main section .text button {
+  section .text button {
     margin: -10px 0 30px 0;
     display: none;
   }
@@ -222,21 +225,18 @@ section:nth-child(3) .text span:nth-child(3) {
     display: flex;
   }
 
-  main section .wrapper .text {
+  section .wrapper .text {
     width: 100%;
   }
 
-  section:nth-child(1) .text,
-  section:nth-child(2) .text,
-  section:nth-child(3) .text,
-  section:nth-child(4) .text {
+  section .text {
     width: 100%;
     display: flex;
   }
 
   section:nth-child(1) .wrapper img,
   section:nth-child(3) .wrapper img {
-    width: 100%; !important;
+    width: 100% !important;
   }
 
   section:nth-child(3) .wrapper img {
