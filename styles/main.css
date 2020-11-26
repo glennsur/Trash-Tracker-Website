@@ -16,19 +16,19 @@
 :root {
   /* --blue-color: #1160FF; */
   /* --blue-color: #00a9f4; */
-  --blue-color: #0097ee;
+  --blue-color: #0097EE;
 }
 
 .nav-header,
 .logo-container,
 .logo-container a,
+.nav-header ul::after,
 footer,
 footer .wrapper section div img {
   display: flex;
   align-items: center;
   justify-content: center;
 }
-
 
 body {
   font-family: 'Lexend Deca', 'PT sans', 'Open Sans', sans-serif;
@@ -50,10 +50,11 @@ body {
   height: 3px;
   transition: transform .3s ease-in-out;
   transform: scaleX(0);
-  background: #fff;
+  background: #FFF;
 }
 
-.text button:hover::before, .text button:focus::before {
+.text button:hover::before,
+.text button:focus::before {
   transform: scaleX(1);
 }
 
@@ -115,7 +116,8 @@ header {
   position: relative;
 }
 
-.nav-header ul li a:hover {
+.nav-header ul li a:hover,
+.nav-header ul li a:focus {
   color: var(--blue-color);;
 }
 
@@ -131,7 +133,7 @@ header {
   background-color: var(--blue-color);;
 }
 
-.nav-header ul li a:hover::before, 
+.nav-header ul li a:hover::before,
 .nav-header ul li a:focus::before {
   transform: scaleX(1);
 }
@@ -144,6 +146,7 @@ header {
   align-items: center;
   user-select: none;
 }
+
 .hamburger p {
   font-weight: 700;
   padding-left: 10px;
@@ -159,6 +162,7 @@ header {
   height: 90px;
   cursor: pointer;
   opacity: .5;
+
   -webkit-appearance: none;
 }
 
@@ -185,7 +189,7 @@ footer .wrapper section {
   width: 30%;
   height: 100%;
   letter-spacing: 1.5px;
-  color: #fff;
+  color: #FFF;
   background-color: transparent;
 }
 
@@ -194,7 +198,7 @@ footer .wrapper section {
   font-weight: 700 !important;
   margin: 6px 0;
   text-transform: uppercase;
-  color: #fff;
+  color: #FFF;
 }
 
 footer .wrapper section div {
@@ -208,13 +212,12 @@ footer .wrapper section div {
 
 footer .wrapper section div img {
   width: 50%;
-  transform: translateY(16px);
+  transform: translateY(20px);
 }
-
 
 footer .wrapper section div ul li a {
   position: relative;
-  color: #fff;
+  color: #FFF;
 }
 
 footer .wrapper section div ul li a::before {
@@ -226,7 +229,8 @@ footer .wrapper section div ul li a::before {
   height: 2px;
   transition: transform .3s ease-in-out;
   transform: scaleX(0);
-  background-color: #fff;
+  background-color: #FFF;
+  background-color: var(--blue-color);
 }
 
 footer .wrapper section div ul li a:hover::before,
@@ -234,27 +238,29 @@ footer .wrapper section div ul li a:focus::before {
   transform: scaleX(1);
 }
 
+footer .wrapper section div ul li a:hover,
+footer .wrapper section div ul li a:focus {
+  color: var(--blue-color);  
+}
+
 
 
 /* =========== MEDIA QUERY =========== */
 
 @media (max-width: 760px) {
-  .wrapper {
-    width: 90vw;
-  }
-
-  .wrapper .header-container {
-    justify-content: space-between;
-  }
-
-  .header-container {
-    position: relative;
-  }
-
   header {
     position: fixed;
     z-index: 100;
     width: 100%;
+  }
+
+  .wrapper {
+    width: 90vw;
+  }
+
+  .header-container {
+    position: relative;
+    justify-content: space-between;
   }
 
   header .logo-container {
@@ -263,18 +269,12 @@ footer .wrapper section div ul li a:focus::before {
     height: 100%;
   }
 
-  .nav-header ul {
-    display: none;
-    position: fixed;
-    z-index: 10;
-    top: 0;
-    left: 0;
+  header .logo-container a img {
+    width: 60px;
+  }
+
+  .invisible-checkbox {
     display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    width: 100vw;
-    height: 60vh;
-    transform: translateY(-100vh);
   }
 
   .invisible-checkbox:checked + ul {
@@ -282,38 +282,18 @@ footer .wrapper section div ul li a:focus::before {
     transform: translateY(20vh);
   }
 
-  .invisible-checkbox:checked + ul::after {
-    animation: pop-in-animation 1s;
-  }
-
-  .invisible-checkbox:checked + .logo-img {
-    background-image: url(../IMG/unlogo2.png);
-  }
-
-  .nav-header ul::after {
-    content: '';
-    font-size: 50px;
-    font-weight: 900;
-    position: absolute;
-    z-index: 1;
-    right: 0;
+  .nav-header ul {
+    position: fixed;
+    z-index: 10;
+    top: 0;
+    left: 0;
+    display: none;
     display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100px;
-    height: 90px;
-    transform: translateY(-20vh);
-    opacity: 1;
-    color: #fff;
-    background-image: url(../IMG/x-button.png);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: 30%;
-  }
-
-  @keyframes pop-in-animation {
-    0% { opacity: 0; }
-    100% { opacity: 1; }
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100vw;
+    height: 60vh;
+    transform: translateY(-100vh);
   }
 
   .nav-header ul::before {
@@ -327,8 +307,20 @@ footer .wrapper section div ul li a:focus::before {
     background: #0A0D0E;
   }
 
-  .invisible-checkbox {
-    display: flex;
+  .nav-header ul::after {
+    content: '';
+    position: absolute;
+    z-index: 1;
+    right: 0;
+    width: 100px;
+    height: 90px;
+    transform: translateY(-18vh) translateX(-2vh);
+    opacity: 1;
+    color: #FFF;
+    background-image: url(../IMG/x-button.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 50%;
   }
 
   .nav-header ul li {
@@ -337,7 +329,10 @@ footer .wrapper section div ul li a:focus::before {
   }
 
   .nav-header ul li a {
-    color: #fff;
+    color: #FFF;
+    font-size: 30px;
+    letter-spacing: 2px;
+    font-weight: 600;
   }
 
   .hamburger {
@@ -345,10 +340,6 @@ footer .wrapper section div ul li a:focus::before {
     display: flex;
     height: 100%;
     padding-right: 5px;
-  }
-
-  .logo-container a img {
-    width: 60px;
   }
 
   /* =========== FOOTER =========== */

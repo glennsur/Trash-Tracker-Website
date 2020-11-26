@@ -51,6 +51,8 @@
       <workItem from="1606130785938" duration="214000" />
       <workItem from="1606131104047" duration="244000" />
       <workItem from="1606131354522" duration="9357000" />
+      <workItem from="1606213283036" duration="4234000" />
+      <workItem from="1606311947995" duration="247000" />
     </task>
     <servers />
   </component>
@@ -66,10 +68,14 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="540" y="262" key="IDE.errors.dialog/0.0.1920.1040@0.0.1920.1040" timestamp="1606131128043" />
-    <state x="404" y="161" key="SettingsEditor" timestamp="1606131347197">
+    <state x="404" y="161" key="SettingsEditor" timestamp="1606216760102">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="362" y="159" key="SettingsEditor/0.0.1722.1030@0.0.1722.1030" timestamp="1605611972740" />
-    <state x="404" y="161" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1606131347197" />
+    <state x="404" y="161" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1606216760102" />
+    <state x="342" y="140" key="new project wizard" timestamp="1606312194576">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="342" y="140" key="new project wizard/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1606312194576" />
   </component>
 </project>
