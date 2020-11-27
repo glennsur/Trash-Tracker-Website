@@ -57,6 +57,25 @@
   display: block;
 }
 
+
+
+#scrollToTop {
+  background-image: url("../IMG/arrow-up.png");
+  background-size: 80%;
+  background-repeat: no-repeat;
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  width: 100px;
+  height: 100px;
+  transition: 200ms;
+}
+
+#scrollToTop:focus,
+#scrollToTop:hover {
+  transform: scale(1.1);
+}
+
 .nav-header,
 .logo-container,
 .logo-container a,
@@ -97,7 +116,7 @@ body {
 }
 
 .active {
-  color: #32543c; !important;
+  color: #32543c !important;
 }
 
 /* =========== HEADER =========== */
@@ -116,7 +135,7 @@ header {
 .logo-container {
   z-index: 100;
   overflow: visible;
-  width: 30%;
+  width: 7%;
 }
 
 .logo-container a img {
@@ -284,6 +303,14 @@ footer .wrapper section div ul li a:focus {
 
 
 /* =========== MEDIA QUERY =========== */
+@media (min-height: 760px) {
+
+}
+
+
+
+
+
 
 @media (max-width: 760px) {
   #skipToContent,
