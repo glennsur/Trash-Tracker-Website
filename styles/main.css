@@ -20,7 +20,7 @@
 :root {
   /* --blue-color: #1160FF; */
   /* --blue-color: #00a9f4; */
-  --blue-color: #0097ee;
+  --blue-color: #32543c;
 }
 
 #skipToContent {
@@ -32,7 +32,7 @@
   }
 
 #skipToContent:focus {
-  background-color: var(--blue-color);
+  background-color: #32543c;
   width: 100px;
   height: 90px;
 
@@ -97,14 +97,14 @@ body {
 }
 
 .active {
-  color: var(--green-color) !important;
+  color: #32543c; !important;
 }
 
 /* =========== HEADER =========== */
 
 header {
   background-color: #f0f6ff;
-
+  box-shadow: 0 0 20px rgba(0,0,0,0.5);
 }
 
 .header-container {
@@ -116,7 +116,7 @@ header {
 .logo-container {
   z-index: 100;
   overflow: visible;
-  width: 7%;
+  width: 30%;
 }
 
 .logo-container a img {
@@ -156,7 +156,7 @@ header {
 
 .nav-header ul li a:hover,
 .nav-header ul li a:focus {
-  color: var(--blue-color);;
+  color: #32543c;
 }
 
 .nav-header ul li a::before {
@@ -168,7 +168,7 @@ header {
   height: 2px;
   transition: transform .3s ease-in-out;
   transform: scaleX(0);
-  background-color: var(--blue-color);;
+  background-color: #32543c;
 }
 
 .nav-header ul li a:hover::before,
@@ -210,7 +210,7 @@ footer {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 400px;
+  min-height: 400px;
   background-color: #0A0D0E;
 }
 
@@ -278,7 +278,7 @@ footer .wrapper section div ul li a:focus::before {
 
 footer .wrapper section div ul li a:hover,
 footer .wrapper section div ul li a:focus {
-  color: var(--blue-color);  
+  color: #32543c;
 }
 
 

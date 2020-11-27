@@ -1,5 +1,111 @@
 
 /* =========== HERO/Image =========== */
+html {
+  scroll-behavior: smooth;
+}
+
+.container-hero-image {
+  height: 850px;
+  background: purple;
+  max-width: 2000px;
+  margin: auto;
+}
+
+
+.hero-image {
+  background-color: white;
+  margin: auto;
+  height: 100%;
+  width: 100%;
+  display: flex;
+}
+
+.left-side {
+  width: 60%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative
+}
+
+.left-side .hero-text {
+  transform: translateY(-50px);
+}
+
+.left-side .hero-text h1,
+.left-side .hero-text h2 {
+  text-align: center;
+  color: #13161a;
+}
+
+.left-side .hero-text h1 {
+  font-size: 130px;
+  font-weight: 900;
+  letter-spacing: 20px;
+
+}
+.left-side .hero-text h2 {
+  font-size: 40px;
+  font-weight: 400;
+  letter-spacing: 10px;
+}
+
+
+.left-side .scroll-down {
+  position: absolute;
+  width: 350px;
+  height: 125px;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%);
+}
+
+.left-side .scroll-down a p {
+  font-size: 20px;
+  height: 20px;
+  text-align: center;
+  text-decoration: none;
+  color: #13161a;
+  transition: 300ms;
+}
+
+.left-side .scroll-down a:hover p {
+  height: 30px;
+  font-size: 22px;
+}
+
+.left-side .scroll-down a {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  height: 75px;
+}
+
+.left-side .scroll-down a img {
+  margin: auto;
+  transition: 300ms;
+}
+
+.right-side {
+  width: 40%;
+  height: 100%;
+  position: relative;
+}
+
+.right-side .hero-image-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+}
+
+/* =========== HERO/Image =========== */
 
 .real-section-1 {
   position: relative;
@@ -212,6 +318,20 @@ section:nth-child(3) .text p:nth-child(3) {
   }
 }
 
+@media (max-width: 1100px) {
+  .hero-image {
+    flex-direction: column;
+  }
+  .hero-image .left-side,
+  .hero-image .right-side {
+    width: 100%;
+  }
+
+  .hero-image {
+    height: 1200px;
+  }
+
+}
 @media (max-width: 760px) {
   main section:nth-child(1) .wrapper,
   main section:nth-child(3) .wrapper {
