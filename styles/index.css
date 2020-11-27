@@ -67,7 +67,6 @@ section {
   display: flex;
   align-items: center;
   justify-content: left;
-  height: 700px;
 }
 
 section .wrapper {
@@ -82,7 +81,9 @@ section .wrapper {
   font-weight: 700;
   display: none;
   margin: 0 0 20px 0;
-  color: #0A0D0E;
+  color: var(--blue-color);
+  text-decoration: underline;
+  text-underline-position: under;
 }
 
 /* =========== Section 1 =========== */
@@ -90,6 +91,11 @@ section .wrapper {
 
 section:nth-child(1) {
   background-color: white;
+  min-height: 700px;
+}
+
+section:nth-child(1) .wrapper {
+  padding: 100px 0;
 }
 
 section:nth-child(1) .text {
@@ -138,7 +144,7 @@ section:nth-child(1) .text p:nth-child(3) {
 /* =========== Section 2 =========== */
 
 section:nth-child(2) {
-  height: 500px;
+  min-height: 500px;
   background-color: #ECF0F1;
 }
 
@@ -170,6 +176,7 @@ section:nth-child(2) .text p:nth-child(2) {
 
 section:nth-child(3) {
   background-color: #FFF;
+  min-height: 700px;
 }
 
 section:nth-child(3) .text {

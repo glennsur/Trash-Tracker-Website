@@ -13,10 +13,48 @@
   text-decoration: none;
 }
 
+
+/* 32543c grønn farge */
+
+
 :root {
   /* --blue-color: #1160FF; */
   /* --blue-color: #00a9f4; */
-  --blue-color: #0097EE;
+  --blue-color: #0097ee;
+}
+
+#skipToContent {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  background: transparent;
+  cursor: default;
+  }
+
+#skipToContent:focus {
+  background-color: var(--blue-color);
+  width: 100px;
+  height: 90px;
+
+}
+
+ #skipToContent::after {
+  content: 'Skip to content';
+  position: absolute;
+  width: 100px;
+  height: 45px;
+  background: transparent;
+  z-index: 100000000;
+  display: none;
+  text-align: center;
+  padding-top: 25px;
+  color: white;
+  border: none;
+  text-decoration: underline;
+}
+
+#skipToContent:focus::after {
+  display: block;
 }
 
 .nav-header,
@@ -59,14 +97,14 @@ body {
 }
 
 .active {
-  color: var(--blue-color) !important;
+  color: var(--green-color) !important;
 }
 
 /* =========== HEADER =========== */
 
 header {
-  background-color: #ECF0F1;
-  box-shadow: 0 0 30px rgba(0,0,0,.3);
+  background-color: #f0f6ff;
+
 }
 
 .header-container {
@@ -230,7 +268,7 @@ footer .wrapper section div ul li a::before {
   transition: transform .3s ease-in-out;
   transform: scaleX(0);
   background-color: #FFF;
-  background-color: var(--blue-color);
+  /* background-color: var(--blue-color); */
 }
 
 footer .wrapper section div ul li a:hover::before,
@@ -248,6 +286,11 @@ footer .wrapper section div ul li a:focus {
 /* =========== MEDIA QUERY =========== */
 
 @media (max-width: 760px) {
+  #skipToContent,
+  #skipToCotent::After {
+    display: none;
+  }
+
   header {
     position: fixed;
     z-index: 100;
