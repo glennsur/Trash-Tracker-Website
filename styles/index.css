@@ -195,16 +195,16 @@ section .wrapper {
 /* =========== Section 1 =========== */
 
 
-section:nth-child(1) {
+section:nth-child(2) {
   background-color: white;
   min-height: 700px;
 }
 
-section:nth-child(1) .wrapper {
+section:nth-child(2) .wrapper {
   padding: 100px 0;
 }
 
-section:nth-child(1) .text {
+section:nth-child(2) .text {
   font-size: 16px;
   font-weight: 800;
   display: flex;
@@ -213,14 +213,14 @@ section:nth-child(1) .text {
   color: #0A0D0E;
 }
 
-section:nth-child(1) .text p:nth-child(2) {
+section:nth-child(2) .text p:nth-child(2) {
   font-size: 50px;
   font-weight: 700;
   width: 100%;
   color: #0A0D0E;
 }
 
-section:nth-child(1) .text p:nth-child(3) {
+section:nth-child(2) .text p:nth-child(3) {
   font-size: 18px;
   font-weight: 400;
   line-height: 1.8;
@@ -249,17 +249,17 @@ section:nth-child(1) .text p:nth-child(3) {
 
 /* =========== Section 2 =========== */
 
-section:nth-child(2) {
+section:nth-child(1) {
   min-height: 500px;
   background-color: #ECF0F1;
 }
 
-section:nth-child(2) .wrapper {
+section:nth-child(1) .wrapper {
   align-items: center;
   justify-content: center;
 }
 
-section:nth-child(2) .text {
+section:nth-child(1) .text {
   font-size: 50px;
   font-weight: 700;
   display: inline;
@@ -269,7 +269,7 @@ section:nth-child(2) .text {
   text-align: center;
   color: #0A0D0E;
 }
-section:nth-child(2) .text p:nth-child(2) {
+section:nth-child(1) .text p:nth-child(2) {
   font-size: 30px;
   font-weight: 400;
   line-height: 1.6;
@@ -281,7 +281,7 @@ section:nth-child(2) .text p:nth-child(2) {
 /* =========== Section 3 =========== */
 
 section:nth-child(3) {
-  background-color: #FFF;
+  background-color: #ECF0F1;
   min-height: 700px;
 }
 
