@@ -132,13 +132,12 @@ header {
 }
 
 .logo-container {
-  z-index: 100;
   overflow: visible;
-  width: 7%;
+  width: 4%;
 }
 
 .logo-container a img {
-  width: 60px;
+  width: 150px;
 }
 
 .header-container .nav-header {
@@ -389,7 +388,7 @@ footer .wrapper section div ul li a:focus {
     background-image: url(../IMG/x-button.png);
     background-repeat: no-repeat;
     background-position: center;
-    background-size: 50%;
+    background-size: 30%;
   }
 
   .nav-header ul li {

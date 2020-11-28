@@ -238,7 +238,7 @@ main section:nth-child(2) .text p:nth-child(3) {
   text-decoration: none;
   color: white;
   border: none;
-  border-radius: 30px;
+
   background-color: #0A0D0E;
 }
 
