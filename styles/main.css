@@ -156,7 +156,7 @@ header {
 .nav-header ul {
   display: flex;
   align-items: center;
-  width: 100%;
+  width: 600%;
 }
 
 .nav-header ul li {

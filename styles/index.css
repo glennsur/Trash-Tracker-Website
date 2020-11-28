@@ -21,7 +21,7 @@ html {
 }
 
 .left-side {
-  width: 60%;
+  width: 55.5%;
   height: 100%;
   display: flex;
   align-items: center;
@@ -90,7 +90,7 @@ html {
 }
 
 .right-side {
-  width: 40%;
+  width: 44.5%;
   height: 100%;
   position: relative;
 }
@@ -121,7 +121,6 @@ html {
   left: 0;
   width: 100%;
   height: 850px;
-
   object-fit: cover;
 }
 
@@ -195,16 +194,16 @@ section .wrapper {
 /* =========== Section 1 =========== */
 
 
-section:nth-child(2) {
+main section:nth-child(2) {
   background-color: white;
   min-height: 700px;
 }
 
-section:nth-child(2) .wrapper {
+main section:nth-child(2) .wrapper {
   padding: 100px 0;
 }
 
-section:nth-child(2) .text {
+main section:nth-child(2) .text {
   font-size: 16px;
   font-weight: 800;
   display: flex;
@@ -213,14 +212,14 @@ section:nth-child(2) .text {
   color: #0A0D0E;
 }
 
-section:nth-child(2) .text p:nth-child(2) {
+main section:nth-child(2) .text p:nth-child(2) {
   font-size: 50px;
   font-weight: 700;
   width: 100%;
   color: #0A0D0E;
 }
 
-section:nth-child(2) .text p:nth-child(3) {
+main section:nth-child(2) .text p:nth-child(3) {
   font-size: 18px;
   font-weight: 400;
   line-height: 1.8;
@@ -249,17 +248,17 @@ section:nth-child(2) .text p:nth-child(3) {
 
 /* =========== Section 2 =========== */
 
-section:nth-child(1) {
+main section:nth-child(1) {
   min-height: 500px;
   background-color: #ECF0F1;
 }
 
-section:nth-child(1) .wrapper {
+main section:nth-child(1) .wrapper {
   align-items: center;
   justify-content: center;
 }
 
-section:nth-child(1) .text {
+main section:nth-child(1) .text {
   font-size: 50px;
   font-weight: 700;
   display: inline;
@@ -269,7 +268,7 @@ section:nth-child(1) .text {
   text-align: center;
   color: #0A0D0E;
 }
-section:nth-child(1) .text p:nth-child(2) {
+main section:nth-child(1) .text p:nth-child(2) {
   font-size: 30px;
   font-weight: 400;
   line-height: 1.6;
@@ -280,13 +279,13 @@ section:nth-child(1) .text p:nth-child(2) {
 
 /* =========== Section 3 =========== */
 
-section:nth-child(3) {
+main section:nth-child(3) {
   background-color: #ECF0F1;
   min-height: 700px;
-  padding: 200px;
+  padding: 100px 0 200px 0;
 }
 
-section:nth-child(3) .text {
+main section:nth-child(3) .text {
   font-size: 16px;
   font-weight: 800;
   display: flex;
@@ -295,14 +294,14 @@ section:nth-child(3) .text {
   color: #0A0D0E;
 }
 
-section:nth-child(3) .text p:nth-child(2) {
+main section:nth-child(3) .text p:nth-child(2) {
   font-size: 50px;
   font-weight: 700;
   width: 100%;
   color: #0A0D0E;
 }
 
-section:nth-child(3) .text p:nth-child(3) {
+main section:nth-child(3) .text p:nth-child(3) {
   font-size: 18px;
   font-weight: 400;
   line-height: 1.8;
@@ -331,20 +330,23 @@ section:nth-child(3) .text p:nth-child(3) {
   .hero-image {
     height: 1200px;
   }
+  .container-hero-image {
+    height: 1200px;
+  }
 
 }
 @media (max-width: 760px) {
-  main section:nth-child(1) .wrapper,
+  main section:nth-child(2) .wrapper,
   main section:nth-child(3) .wrapper {
     flex-direction: column;
   }
 
-  section {
+  main section {
     height: auto;
     padding: 50px 0;
   }
 
-  section .text button {
+  main section .text button {
     display: none;
     margin: -10px 0 30px 0;
   }
@@ -353,25 +355,96 @@ section:nth-child(3) .text p:nth-child(3) {
     display: flex;
   }
 
-  section .wrapper .text {
+  main section .wrapper .text {
     width: 100%;
   }
 
-  section .text {
+  main section .text {
     display: flex;
     width: 100%;
   }
 
-  section:nth-child(1) .wrapper img,
-  section:nth-child(3) .wrapper img {
+  main section:nth-child(2) .wrapper img,
+  main section:nth-child(3) .wrapper img {
     width: 100% !important;
   }
 
-  section:nth-child(3) .wrapper img {
+  main section:nth-child(3) .wrapper img {
     margin-bottom: 40px;
   }
 
-  section:nth-child(3) .wrapper .text {
+  main section:nth-child(3) .wrapper .text {
     margin-bottom: 100px;
   }
+  main section:nth-child(3) {
+    background-color: #ECF0F1;
+    min-height: 700px;
+    padding: 100px 0 0 0;
+  }
+
 }
+
+/* =========== MEDIA QUERY (HERO) =========== */
+
+@media (max-width: 1100px) {
+  .container-hero-image {
+    height: 750px;
+  }
+  .hero-image {
+    height: 750px;
+  }
+  .left-side .hero-text h1 {
+    font-size: 14vw;
+  }
+  .left-side .hero-text h2 {
+    font-size: 3vw;
+  }
+  .left-side {
+    height: 50%;
+  }
+  .right-side {
+    height: 50%;
+  }
+  .left-side .hero-text {
+    transform: translateY(-80px) translateX(10px);
+  }
+}
+
+  @media (max-width: 760px) {
+    .container-hero-image {
+      height: 800px;
+    }
+    .hero-image {
+      height: 800px;
+    }
+    .left-side .hero-text h1 {
+      font-size: 18vw;
+    }
+    .left-side .hero-text h2 {
+      font-size: 5vw;
+    }
+    .left-side {
+      height: 45%;
+    }
+    .right-side {
+      height: 55%;
+    }
+    .left-side .hero-text {
+      transform: translateY(-60px) translateX(10px);
+    }
+    .left-side .scroll-down {
+      height: 100px;
+    }
+  }
+    @media (max-width: 400px) {
+      .left-side .hero-text h1 {
+        font-size: 20vw;
+      }
+      .left-side .hero-text h2 {
+        font-size: 5.5vw;
+      }
+      .left-side .scroll-down {
+        height: 125px;
+      }
+    }
+
