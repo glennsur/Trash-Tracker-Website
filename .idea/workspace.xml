@@ -11,6 +11,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="CSS File" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -23,6 +24,7 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
@@ -55,7 +57,7 @@
       <workItem from="1606311947995" duration="247000" />
       <workItem from="1606484184251" duration="4205000" />
       <workItem from="1606497291046" duration="10785000" />
-      <workItem from="1606561101709" duration="6055000" />
+      <workItem from="1606561101709" duration="8855000" />
     </task>
     <servers />
   </component>

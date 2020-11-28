@@ -295,10 +295,10 @@ footer .wrapper section div ul li a:focus::before {
   transform: scaleX(1);
 }
 
-footer .wrapper section div ul li a:hover,
+/* footer .wrapper section div ul li a:hover,
 footer .wrapper section div ul li a:focus {
-  color: #32543c;
-}
+  color: white;
+} */
 
 
 
