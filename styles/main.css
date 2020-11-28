@@ -13,14 +13,13 @@
   text-decoration: none;
 }
 
-
-/* 32543c grønn farge */
-
-
 :root {
-  /* --blue-color: #1160FF; */
-  /* --blue-color: #00a9f4; */
-  --blue-color: #32543c;
+  --green-color: #32543c;
+  --green-color: #377e4c;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 #skipToContent {
@@ -29,17 +28,16 @@
   height: 1px;
   background: transparent;
   cursor: default;
-  }
+}
 
 #skipToContent:focus {
-  background-color: #32543c;
+  background-color: var(--green-color);
   width: 100px;
   height: 90px;
-
 }
 
  #skipToContent::after {
-  content: 'Skip to content';
+  content: 'Skip to main content';
   position: absolute;
   width: 100px;
   height: 45px;
@@ -56,8 +54,6 @@
 #skipToContent:focus::after {
   display: block;
 }
-
-
 
 #scrollToTop {
   background-image: url("../IMG/arrow-up.png");
@@ -98,25 +94,8 @@ body {
   margin: auto;
 }
 
-.text button::before {
-  content: '';
-  position: absolute;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  height: 3px;
-  transition: transform .3s ease-in-out;
-  transform: scaleX(0);
-  background: #FFF;
-}
-
-.text button:hover::before,
-.text button:focus::before {
-  transform: scaleX(1);
-}
-
 .active {
-  color: #32543c !important;
+  color: var(--green-color) !important;
 }
 
 /* =========== HEADER =========== */
@@ -132,6 +111,7 @@ header {
 }
 
 .logo-container {
+  z-index: 100;
   overflow: visible;
   width: 4%;
 }
@@ -173,7 +153,7 @@ header {
 
 .nav-header ul li a:hover,
 .nav-header ul li a:focus {
-  color: #32543c;
+  color: var(--green-color);
 }
 
 .nav-header ul li a::before {
@@ -185,7 +165,7 @@ header {
   height: 2px;
   transition: transform .3s ease-in-out;
   transform: scaleX(0);
-  background-color: #32543c;
+  background-color: var(--green-color);
 }
 
 .nav-header ul li a:hover::before,
@@ -285,7 +265,6 @@ footer .wrapper section div ul li a::before {
   transition: transform .3s ease-in-out;
   transform: scaleX(0);
   background-color: #FFF;
-  /* background-color: var(--blue-color); */
 }
 
 footer .wrapper section div ul li a:hover::before,
@@ -293,10 +272,7 @@ footer .wrapper section div ul li a:focus::before {
   transform: scaleX(1);
 }
 
-/* footer .wrapper section div ul li a:hover,
-footer .wrapper section div ul li a:focus {
-  color: white;
-} */
+
 
 
 
@@ -388,7 +364,7 @@ footer .wrapper section div ul li a:focus {
     background-image: url(../IMG/x-button.png);
     background-repeat: no-repeat;
     background-position: center;
-    background-size: 30%;
+    background-size: 50%;
   }
 
   .nav-header ul li {

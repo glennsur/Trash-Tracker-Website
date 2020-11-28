@@ -1,8 +1,4 @@
-
 /* =========== HERO/Image =========== */
-html {
-  scroll-behavior: smooth;
-}
 
 .container-hero-image {
   height: 850px;
@@ -43,12 +39,16 @@ html {
   font-size: 130px;
   font-weight: 900;
   letter-spacing: 20px;
-
+  line-height: 1;
+}
+.left-side .hero-text h1 span {
+  font-size: 130px;
 }
 .left-side .hero-text h2 {
-  font-size: 40px;
+  font-size: 30px;
   font-weight: 400;
   letter-spacing: 10px;
+  padding-top: 50px;
 }
 
 
@@ -105,66 +105,7 @@ html {
   object-fit: cover;
 }
 
-/* =========== HERO/Image =========== */
 
-.real-section-1 {
-  position: relative;
-  overflow: hidden;
-  width: 100%;
-  height: 850px;
-  text-align: center;
-}
-
-.real-section-1 img {
-  position: relative;
-  z-index: -1;
-  left: 0;
-  width: 100%;
-  height: 850px;
-  object-fit: cover;
-}
-
-.real-section-1 .container {
-  position: absolute;
-  z-index: 1;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-}
-
-.real-section-1 .container::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-}
-
-.real-section-1 .container .wrapper {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 150%;
-}
-
-.real-section-1 .container .wrapper .text {
-  font-family: 'Lexend Deca', sans-serif;
-  font-size: 40px;
-  font-weight: 900;
-  z-index: 1;
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  justify-content: center;
-  width: 600px;
-  text-align: center;
-  text-transform: uppercase;
-  color: #0A0D0E;
-  background-color: #FFF;
-  box-shadow: 0 0 50px rgba(0,0,0,.3);
-}
 
 /* =========== Sections =========== */
 
@@ -186,7 +127,7 @@ section .wrapper {
   font-weight: 700;
   display: none;
   margin: 0 0 20px 0;
-  color: var(--blue-color);
+  color: var(--green-color);
   text-decoration: underline;
   text-underline-position: under;
 }
@@ -238,9 +179,14 @@ main section:nth-child(2) .text p:nth-child(3) {
   text-decoration: none;
   color: white;
   border: none;
-
+  border-radius: 30px;
   background-color: #0A0D0E;
 }
+
+.text button:hover {
+  background-color: var(--green-color);
+}
+
 
 .wrapper img {
   width: 40%;
@@ -269,7 +215,7 @@ main section:nth-child(1) .text {
   color: #0A0D0E;
 }
 main section:nth-child(1) .text p:nth-child(2) {
-  font-size: 30px;
+  font-size: 25px;
   font-weight: 400;
   line-height: 1.6;
   width: 100%;
