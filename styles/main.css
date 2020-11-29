@@ -32,23 +32,27 @@ html {
 
 #skipToContent:focus {
   background-color: var(--green-color);
-  width: 100px;
+  width: 120px;
   height: 90px;
+  outline: none;
+  padding: 0 10px;
+  border: 2px dashed #32533c;
 }
 
- #skipToContent::after {
+#skipToContent::after {
   content: 'Skip to main content';
   position: absolute;
   width: 100px;
   height: 45px;
   background: transparent;
-  z-index: 100000000;
+  z-index: 300;
   display: none;
   text-align: center;
   padding-top: 25px;
   color: white;
   border: none;
   text-decoration: underline;
+
 }
 
 #skipToContent:focus::after {
@@ -67,7 +71,7 @@ html {
   position: fixed;
   position: sticky;
   pointer-events: all;
-  top: calc(100vh - 100px);
+  top: calc(100vh - 105px);
   display: inline-block;
   background-image: url("../IMG/arrow-up-3.svg");
   background-size: 80%;
@@ -75,7 +79,7 @@ html {
   width: 100px;
   height: 100px;
   transition: transform 300ms;
-  z-index: 1000;
+  z-index: 50;
 }
 
 #scrollToTop:focus,
@@ -122,7 +126,7 @@ header {
 }
 
 .logo-container {
-  z-index: 100;
+  z-index: 10;
   overflow: visible;
   width: 10%;
   padding-left: 50px;
@@ -211,6 +215,10 @@ header {
   opacity: .5;
 
   -webkit-appearance: none;
+  appearance: none;
+  border: none;
+  background-color: transparent;
+  outline: none;
 }
 
 /* =========== FOOTER =========== */
@@ -364,7 +372,7 @@ footer .wrapper section div ul li a:focus::before {
     width: 100vw;
     height: 100vh;
     transform: translateY(-20vh);
-    background: #0A0D0E;
+    background: #0a0b0e;
   }
 
   .nav-header ul::after {
@@ -380,7 +388,7 @@ footer .wrapper section div ul li a:focus::before {
     background-image: url(../IMG/x-button.png);
     background-repeat: no-repeat;
     background-position: center;
-    background-size: 50%;
+    background-size: 30%;
   }
 
   .nav-header ul li {
@@ -390,7 +398,7 @@ footer .wrapper section div ul li a:focus::before {
 
   .nav-header ul li a {
     color: #FFF;
-    font-size: 30px;
+    font-size: 25px;
     letter-spacing: 2px;
     font-weight: 600;
   }
@@ -427,5 +435,8 @@ footer .wrapper section div ul li a:focus::before {
 
   footer .white-space {
     display: none;
+  }
+  #scrollToTop {
+    top: calc(100vh - 150px);
   }
 }
