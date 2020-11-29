@@ -55,26 +55,26 @@ html {
   display: block;
 }
 
-#whitespace-for-scrollToTop {
-  height: 110vh;
-  width: 10px;
-  background: red;
+#scrollToTop-container {
   position: absolute;
-  top: 0;
+  top: 105vh;
   right: 10px;
-  z-index: 1000;
+  bottom: 0;
+  overflow: visible;
 }
 
 #scrollToTop {
+  position: fixed;
+  position: sticky;
+  pointer-events: all;
+  top: calc(100vh - 100px);
+  display: inline-block;
   background-image: url("../IMG/arrow-up.png");
   background-size: 80%;
   background-repeat: no-repeat;
-  position: sticky;
-  bottom: 0;
-  right: 10px;
   width: 100px;
   height: 100px;
-  transition: 200ms;
+  transition: transform 300ms;
   z-index: 1000;
 }
 

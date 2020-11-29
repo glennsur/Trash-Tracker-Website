@@ -161,7 +161,7 @@ main section:nth-child(1) .text p:nth-child(2) {
   font-size: 50px;
   font-weight: 700;
   width: 100%;
-  color: var(--green-color)
+  color: #0A0D0E;
 }
 
 main section:nth-child(1) .text p:nth-child(3),
@@ -198,7 +198,7 @@ main section:nth-child(2) .text p:nth-child(1) {
   font-size: 50px;
   font-weight: 700;
   width: 100%;
-  color: var(--green-color)
+  color: #0A0D0E;
 }
 
 main section:nth-child(2) .text p:nth-child(2),
