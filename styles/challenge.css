@@ -237,7 +237,7 @@ main section:nth-child(2) {
   border-radius: 10px;
   background-color: white;
   box-shadow: 0 0 10px rgba(0,0,0,.2);
-  transition: 300ms;
+  transition: transform 300ms;
 }
 
 .info-box p {
@@ -309,17 +309,29 @@ main section:nth-child(2) {
   .info-box p:nth-child(1) {
     margin-top: 50px;
   }
+  .info-box .image-container {
+    height: 300px;
+  }
 }
 
 
 
 @media (max-width: 900px) {
   main section:nth-child(1) .text {
+    width: 95%;
+  }
+  main section:nth-child(1) .text p:nth-child(2) {
+    font-size: 40px;
+    padding-top: 10px;
+  }
+  main section:nth-child(1) {
+    padding: 150px 0 50px 0;
+  }
+  .info-box {
     width: 90%;
   }
+
 }
-
-
 
 @media (max-width: 600px) {
   .info-box {

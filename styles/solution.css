@@ -267,4 +267,25 @@ main section:nth-child(3) img {
   .real-section-2 img {
     width: 100%;
   }
+  main section:nth-child(1) .text {
+    width: 90%;
+  }
+  main section:nth-child(2) .text {
+    width: 90%;
+  }
+  main section:nth-child(3) .text {
+    width: 90%;
+  }
+}
+@media (max-width: 760px) {
+  main section:nth-child(1) .text p:nth-child(2) {
+    font-size: 40px;
+  }
+  main section:nth-child(2) .text p:nth-child(1) {
+    font-size: 40px;
+  }
+  main section:nth-child(3) .text p:nth-child(2) {
+    font-size: 40px;
+
+  }
 }
