@@ -6,8 +6,6 @@
   max-width: 2000px;
   margin: auto;
 }
-
-
 .hero-image {
   background-color: white;
   margin: auto;
@@ -24,17 +22,14 @@
   justify-content: center;
   position: relative
 }
-
 .left-side .hero-text {
   transform: translateY(-50px);
 }
-
 .left-side .hero-text h1,
 .left-side .hero-text h2 {
   text-align: center;
   color: #13161a;
 }
-
 .left-side .hero-text h1 {
   font-size: 8vw;
   font-weight: 900;
@@ -50,8 +45,6 @@
   letter-spacing: 10px;
   padding-top: 50px;
 }
-
-
 .left-side .scroll-down {
   position: absolute;
   width: 350px;
@@ -367,9 +360,7 @@ main section:nth-child(3) .text p:nth-child(3) {
     letter-spacing: 10px;
     margin-top: -30px;
   }
-
 }
-
   @media (max-width: 760px) {
     .container-hero-image {
       height: 800px;
@@ -408,9 +399,12 @@ main section:nth-child(3) .text p:nth-child(3) {
       font-size: 40px;
     }
     main section:nth-child(1) .text p:nth-child(2) {
-      font-size: 22px;
+      font-size: 18px;
       line-height: 1.7;
       text-align: left;
+    }
+    #scrollToTop-container {
+      display: none;
     }
   }
     @media (max-width: 400px) {
@@ -438,11 +432,8 @@ main section:nth-child(3) .text p:nth-child(3) {
         margin-top: -30px;
         padding-bottom: 20px;
       }
-
       .left-side .hero-text {
         transform: translateY(-50px) translateX(5px);
       }
-
-
     }
 
