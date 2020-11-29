@@ -69,7 +69,7 @@ html {
   pointer-events: all;
   top: calc(100vh - 100px);
   display: inline-block;
-  background-image: url("../IMG/arrow-up.png");
+  background-image: url("../IMG/arrow-up-3.svg");
   background-size: 80%;
   background-repeat: no-repeat;
   width: 100px;
@@ -124,7 +124,8 @@ header {
 .logo-container {
   z-index: 100;
   overflow: visible;
-  width: 4%;
+  width: 10%;
+  padding-left: 50px;
 }
 
 .logo-container a img {
@@ -313,6 +314,10 @@ footer .wrapper section div ul li a:focus::before {
     width: 90vw;
   }
 
+  footer .wrapper {
+    width: 86vw;
+  }
+
   .header-container {
     position: relative;
     justify-content: space-between;
@@ -325,7 +330,7 @@ footer .wrapper section div ul li a:focus::before {
   }
 
   header .logo-container a img {
-    width: 60px;
+    width: 150px;
   }
 
   .invisible-checkbox {
@@ -415,8 +420,9 @@ footer .wrapper section div ul li a:focus::before {
     padding: 20px 0;
   }
 
-  footer .wrapper img {
-    margin: 50px auto;
+  footer .wrapper section div svg {
+    width: 45vw;
+    padding-bottom: 20px;
   }
 
   footer .white-space {
