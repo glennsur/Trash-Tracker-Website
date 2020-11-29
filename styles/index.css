@@ -429,6 +429,7 @@ main section:nth-child(3) .text p:nth-child(3) {
       }
       .left-side .hero-text h1 span {
         font-size: 16vw;
+        font-weight: 700;
       }
       .left-side .hero-text h2 {
         font-size: 5vw;
@@ -438,6 +439,9 @@ main section:nth-child(3) .text p:nth-child(3) {
         padding-bottom: 20px;
       }
 
+      .left-side .hero-text {
+        transform: translateY(-50px) translateX(5px);
+      }
 
 
     }

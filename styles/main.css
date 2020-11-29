@@ -307,6 +307,15 @@ footer .wrapper section div ul li a:focus::before {
 
 
 @media (max-width: 760px) {
+  #scrollToTop {
+    width: 85px;
+    left: 10px;
+
+  }
+  #scrollToTop-container {
+    right: 0;
+  }
+
   #skipToContent,
   #skipToCotent::After {
     display: none;
@@ -338,7 +347,7 @@ footer .wrapper section div ul li a:focus::before {
   }
 
   header .logo-container a img {
-    width: 150px;
+    width: 120px;
   }
 
   .invisible-checkbox {
