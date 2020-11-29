@@ -144,7 +144,7 @@ main section .wrapper {
 main section:nth-child(1) {
   min-height: 500px;
   padding: 150px 0;
-  background-color: white;
+  background-color: #f0f6ff;
 }
 
 main section:nth-child(1) .text {
@@ -176,13 +176,13 @@ main section:nth-child(1) .text p:nth-child(4) {
 
 /* =========== Section 2 =========== */
 
-main section:nth-child(3) {
+main section:nth-child(2) {
   min-height: 500px;
   padding: 150px 0;
   background-color: white;
 }
 
-main section:nth-child(3) .text {
+main section:nth-child(2) .text {
   font-size: 16px;
   font-weight: 800;
   display: flex;
@@ -193,14 +193,14 @@ main section:nth-child(3) .text {
   color: #0A0D0E;
 }
 
-main section:nth-child(3) .text p:nth-child(2) {
+main section:nth-child(2) .text p:nth-child(2) {
   font-size: 50px;
   font-weight: 700;
   width: 100%;
   color: #0A0D0E;
 }
 
-main section:nth-child(3) .text p:nth-child(3) {
+main section:nth-child(2) .text p:nth-child(3) {
   font-size: 18px;
   font-weight: 400;
   line-height: 1.8;

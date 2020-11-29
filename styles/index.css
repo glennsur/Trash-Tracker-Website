@@ -85,6 +85,7 @@
 }
 
 .left-side .scroll-down a img {
+  width: 30%;
   margin: auto;
   transition: 300ms;
 }

@@ -245,8 +245,8 @@ footer .wrapper section div {
   width: 100%;
 }
 
-footer .wrapper section div img {
-  width: 50%;
+footer .wrapper section div svg {
+  width: 10vw;
   transform: translateY(20px);
 }
 
