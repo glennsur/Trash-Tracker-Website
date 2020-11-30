@@ -66,7 +66,7 @@
       <workItem from="1606497291046" duration="10785000" />
       <workItem from="1606561101709" duration="9804000" />
       <workItem from="1606587086573" duration="2640000" />
-      <workItem from="1606732150153" duration="7531000" />
+      <workItem from="1606732150153" duration="12020000" />
     </task>
     <servers />
   </component>
@@ -91,6 +91,10 @@
     </state>
     <state x="362" y="159" key="SettingsEditor/0.0.1722.1030@0.0.1722.1030" timestamp="1605611972740" />
     <state x="404" y="161" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1606216760102" />
+    <state x="564" y="130" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1606743407611">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="564" y="130" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1606743407611" />
     <state x="342" y="140" key="new project wizard" timestamp="1606312194576">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
