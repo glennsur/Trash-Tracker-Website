@@ -249,6 +249,11 @@ main section:nth-child(3) .text p:nth-child(3) {
   margin: 20px 0;
   color: #0A0D0E;
 }
+main section:nth-child(3) .wrapper img {
+  margin-bottom: 40px;
+  width: 40%;
+  height: auto;
+}
 
 /* =========== MEDIA QUERY =========== */
 
