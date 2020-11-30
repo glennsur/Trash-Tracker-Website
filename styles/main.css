@@ -22,6 +22,17 @@ html {
   scroll-behavior: smooth;
 }
 
+main a {
+  color: #0A0D0E;
+  cursor: default;
+  pointer-events: none;
+}
+
+.pointer-events-auto {
+  pointer-events: auto;
+}
+
+/* =========== MAIN =========== */
 
 #skipToContent {
   position: absolute;
@@ -87,12 +98,6 @@ html {
 #scrollToTop:hover {
   transform: scale(1.1);
 }
-@media (max-width: 760px) {
-  #scrollToTop-container {
-    display: none;
-  }
-}
-
 
 .nav-header,
 .logo-container,
@@ -304,14 +309,10 @@ footer .wrapper section div ul li a:focus::before {
 
 
 /* =========== MEDIA QUERY =========== */
-@media (min-height: 760px) {
+
+@media (max-width: 760px) {
 
 }
-
-
-
-
-
 
 @media (max-width: 760px) {
   #scrollToTop {
@@ -322,9 +323,11 @@ footer .wrapper section div ul li a:focus::before {
   #scrollToTop-container {
     right: 0;
   }
-
   #skipToContent,
   #skipToCotent::After {
+    display: none;
+  }
+  #scrollToTop-container {
     display: none;
   }
 

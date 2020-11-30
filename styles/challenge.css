@@ -1,11 +1,7 @@
 
 /* =========== GENERAL =========== */
 
-main a {
-  color: #0A0D0E;
-  cursor: default;
-  pointer-events: none;
-}
+
 
 /* =========== HERO/Image =========== */
 
@@ -184,41 +180,6 @@ main section:nth-child(1) .text p:nth-child(6) {
   color: #0A0D0E;
 }
 
-/* =========== Section 2 =========== */
-
-/* main section:nth-child(2) {
-    background-color: #ecf0f1;
-    min-height: 500px;
-    padding: 150px 0;
-}
-
-main section:nth-child(2) .text {
-    font-size: 16px;
-    font-weight: 800;
-    display: flex;
-    flex-direction: column;
-    width: 75%;
-    color: #0a0d0e;
-    margin: auto;
-}
-
-main section:nth-child(2) .text span:nth-child(1) {
-    font-size: 50px;
-    font-weight: 700;
-    width: 100%;
-    color: #0a0d0e;
-}
-
-main section:nth-child(2) .text span:nth-child(2) {
-    font-size: 18px;
-    font-weight: 400;
-    line-height: 1.8;
-    width: 100%;
-    margin: 20px 0;
-    color: #0a0d0e;
-} */
-
-
 /* =========== Cards =========== */
 
 main section:nth-child(2) {
@@ -275,8 +236,6 @@ main section:nth-child(2) {
   object-fit: cover;
 }
 
-
-
 /* =========== Media Query =========== */
 
 @media (min-width: 1100px) {
@@ -284,8 +243,6 @@ main section:nth-child(2) {
     min-height: 160px;
   }
 }
-
-
 
 @media (max-width: 1380px) {
   .real-section-1 img {
@@ -296,8 +253,6 @@ main section:nth-child(2) {
     width: 100%;
   }
 }
-
-
 
 @media (max-width: 1100px) {
   main section:nth-child(2) {
@@ -321,8 +276,6 @@ main section:nth-child(2) {
     height: 300px;
   }
 }
-
-
 
 @media (max-width: 900px) {
   main section:nth-child(1) .text {
