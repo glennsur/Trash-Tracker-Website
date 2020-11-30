@@ -319,7 +319,7 @@ main section:nth-child(3) .text button:hover {
 main section:nth-child(3) .wrapper img {
   width: 40%;
   height: auto;
-  filter: contrast(150%);
+ 
 }
 
 /* =========== Media Query =========== */
