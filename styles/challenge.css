@@ -1,4 +1,12 @@
 
+/* =========== GENERAL =========== */
+
+main a {
+  color: #0A0D0E;
+  cursor: default;
+  pointer-events: none;
+}
+
 /* =========== HERO/Image =========== */
 
 .real-section-1 {
