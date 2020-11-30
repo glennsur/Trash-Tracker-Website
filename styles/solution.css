@@ -145,7 +145,7 @@ main section .wrapper {
 
 main section:nth-child(1) {
   min-height: 500px;
-  padding: 100px 0 75px 0;
+  padding: 100px 0 20px 0;
   background-color: white;
 }
 
@@ -312,7 +312,6 @@ main section:nth-child(3) .text button {
   background-color: #0A0D0E;
 }
 
-
 main section:nth-child(3) .text button:hover {
   background-color: var(--green-color);
 }
@@ -329,32 +328,37 @@ main section:nth-child(3) .wrapper img {
 
 
 @media (max-width: 1380px) {
-  .real-section-1 img {
-    width: 100%;
-  }
-
+  .real-section-1 img,
   .real-section-2 img {
     width: 100%;
   }
-  main section:nth-child(1) .text {
-    width: 90%;
-  }
-  main section:nth-child(2) .text {
-    width: 90%;
-  }
+
+  main section:nth-child(1) .text,
+  main section:nth-child(2) .text,
   main section:nth-child(3) .text {
     width: 90%;
   }
 }
+
 @media (max-width: 760px) {
-  main section:nth-child(1) .text p:nth-child(2) {
-    font-size: 40px;
-  }
-  main section:nth-child(2) .text p:nth-child(1) {
-    font-size: 40px;
-  }
+  main section:nth-child(1) .text p:nth-child(2),
+  main section:nth-child(2) .text p:nth-child(1),
   main section:nth-child(3) .text p:nth-child(2) {
     font-size: 40px;
+  }
 
+  main section .wrapper {
+    display: flex;
+    flex-direction: column-reverse !important;
+  }
+
+  main section:nth-child(3){
+    display: flex;
+    flex-direction: column !important;
+  }
+
+  main section:nth-child(3) .wrapper img {
+    width: 80%;
+    padding-bottom: 50px;
   }
 }

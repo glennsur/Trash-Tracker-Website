@@ -278,4 +278,10 @@ main section:nth-child(5) .wrapper img {
   main section:nth-child(4) .text h2 {
     font-size: 35px;
   }
+  main section:nth-child(4) .text h2 {
+    font-size: 35px;
+  }
+  main section:nth-child(5) .text p {
+    font-size: 18px;
+  }
 }

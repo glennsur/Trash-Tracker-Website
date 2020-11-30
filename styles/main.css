@@ -304,10 +304,6 @@ footer .wrapper section div ul li a:focus::before {
   transform: scaleX(1);
 }
 
-
-
-
-
 /* =========== MEDIA QUERY =========== */
 
 @media (max-width: 760px) {
@@ -369,6 +365,11 @@ footer .wrapper section div ul li a:focus::before {
     transform: translateY(20vh);
   }
 
+  .invisible-checkbox:checked + body {
+    height: 100vh !important;
+    overflow-y: hidden !important;
+    position: fixed !important;
+  }
   .nav-header ul {
     position: fixed;
     z-index: 10;
@@ -408,6 +409,7 @@ footer .wrapper section div ul li a:focus::before {
     background-repeat: no-repeat;
     background-position: center;
     background-size: 30%;
+
   }
 
   .nav-header ul li {
