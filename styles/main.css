@@ -82,6 +82,7 @@ main a {
   outline: none;
   padding: 0 10px;
   border: 2px dashed #32533c;
+  z-index: 5000;
 }
 
 #skipToContent::after {
@@ -195,11 +196,11 @@ header {
 .nav-header ul {
   display: flex;
   align-items: center;
-  width: 600%;
+  width: 60%;
 }
 
 .nav-header ul li {
-  margin-left: 70px;
+  margin-left: 50px;
 }
 
 .nav-header ul li a {
@@ -339,6 +340,12 @@ footer .wrapper section div ul li a:focus::before {
 
 /* =========== MEDIA QUERY =========== */
 
+@media (min-width: 2000px) {
+  footer .wrapper section div svg {
+    width: 200px;
+  }
+}
+
 @media (max-width: 900px) {
   header .logo-container {
     padding-left: 4%;
@@ -398,7 +405,7 @@ footer .wrapper section div ul li a:focus::before {
     height: 100%;
   }
 
-  header .logo-container a img {
+  header .logo-container a svg {
     width: 120px;
   }
 
@@ -499,4 +506,24 @@ footer .wrapper section div ul li a:focus::before {
   #scrollToTop {
     top: calc(100vh - 150px);
   }
+}
+
+@media (max-width: 400px) {
+  .nav-header ul::after {
+    background-size: 15%;
+  }
+}
+  
+@media (max-height: 250px) {
+  .nav-header ul {
+    height: 40vh;
+  }
+  .nav-header ul li a {
+    font-size: 6px;
+
+  }
+  .nav-header ul li {
+    margin: 10px 0 0 0;
+  }
+
 }
