@@ -1,8 +1,4 @@
 
-/* =========== GENERAL =========== */
-
-
-
 /* =========== HERO/Image =========== */
 
 .real-section-1 {
@@ -161,17 +157,19 @@ main section:nth-child(1) .text {
   color: #0A0D0E;
 }
 
-main section:nth-child(1) .text p:nth-child(2) {
+main section:nth-child(1) .text .undertitle {
+  font-weight: 700;
+  margin: 0;
+}
+
+main section:nth-child(1) .text h2 {
   font-size: 50px;
   font-weight: 700;
   width: 100%;
   color: #0A0D0E;
 }
 
-main section:nth-child(1) .text p:nth-child(3),
-main section:nth-child(1) .text p:nth-child(4),
-main section:nth-child(1) .text p:nth-child(5),
-main section:nth-child(1) .text p:nth-child(6) {
+main section:nth-child(1) .text p {
   font-size: 18px;
   font-weight: 400;
   line-height: 1.8;
@@ -189,13 +187,7 @@ main section:nth-child(2) {
   padding-top: 50px;
   transform: translateY(-200px);
   background-color: white;
-
 }
-
-/* .info-box:hover {
-  box-shadow: 0 0 10px rgba(0,0,0,.3);
-  transform: scale(1.05);
-} */
 
 .info-box {
   display: flex;
@@ -219,7 +211,6 @@ main section:nth-child(2) {
 .info-box p b {
   font-size: 24px;
 }
-
 
 .info-box .image-container {
   width: 100%;
@@ -272,6 +263,7 @@ main section:nth-child(2) {
   .info-box p:nth-child(1) {
     margin-top: 50px;
   }
+
   .info-box .image-container {
     height: 300px;
   }
@@ -281,17 +273,19 @@ main section:nth-child(2) {
   main section:nth-child(1) .text {
     width: 95%;
   }
-  main section:nth-child(1) .text p:nth-child(2) {
+
+  main section:nth-child(1) .text h2 {
     font-size: 40px;
     padding-top: 10px;
   }
+
   main section:nth-child(1) {
     padding: 150px 0 50px 0;
   }
+
   .info-box {
     width: 90%;
   }
-
 }
 
 @media (max-width: 600px) {

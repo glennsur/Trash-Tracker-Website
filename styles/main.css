@@ -174,8 +174,8 @@ header {
 .logo-container {
   z-index: 10;
   overflow: visible;
-  width: 20%;
-  padding-left: 50px;
+  width: auto;
+  padding-left: 0;
 }
 
 .logo-container a img {
