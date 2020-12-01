@@ -163,7 +163,7 @@ main section:nth-child(1) .text .undertitle {
 }
 
 main section:nth-child(1) .text h2 {
-  font-size: 50px;
+  font-size: 40px;
   font-weight: 700;
   width: 100%;
   color: #0A0D0E;

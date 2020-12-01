@@ -135,7 +135,6 @@ main section:nth-child(1) .wrapper {
 }
 
 main section:nth-child(1) .text {
-  display: inline;
   display: flex;
   flex-direction: column;
   width: 100%;
