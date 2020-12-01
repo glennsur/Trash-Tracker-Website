@@ -28,8 +28,40 @@ main a {
   pointer-events: none;
 }
 
+.text .read-more-a-button {
+  font-size: 20px;
+  font-weight: 700;
+  display: inline-block;
+  padding: 15px 40px;
+  cursor: pointer;
+  text-decoration: none;
+  color: white;
+  border: none;
+  border-radius: 30px;
+  background-color: #0A0D0E;
+  pointer-events: auto;
+}
+
+.text .read-more-a-button:hover {
+  background-color: var(--green-color);
+}
+
+.read-more-a {
+  font-size: 26px;
+  font-weight: 700;
+  display: none;
+  margin: 0 0 20px 0;
+  color: var(--green-color);
+  text-decoration: underline;
+  text-underline-position: under;
+}
 .pointer-events-auto {
   pointer-events: auto;
+}
+.pointer-events-default {
+  pointer-events: auto;
+  color: #377e4c;
+  cursor: pointer;
 }
 
 /* =========== MAIN =========== */
@@ -140,7 +172,7 @@ header {
 .logo-container {
   z-index: 10;
   overflow: visible;
-  width: 10%;
+  width: 8%;
   padding-left: 50px;
 }
 
@@ -306,25 +338,38 @@ footer .wrapper section div ul li a:focus::before {
 
 /* =========== MEDIA QUERY =========== */
 
-@media (max-width: 760px) {
-
+@media (max-width: 900px) {
+  header .logo-container {
+    padding-left: 4%;
+  }
 }
 
 @media (max-width: 760px) {
   #scrollToTop {
     width: 85px;
     left: 10px;
-
   }
+
   #scrollToTop-container {
     right: 0;
   }
+
   #skipToContent,
   #skipToCotent::After {
     display: none;
   }
+
   #scrollToTop-container {
     display: none;
+  }
+
+  main section .text .read-more-a-button {
+    display: none;
+    margin: -10px 0 30px 0;
+  }
+
+  .read-more-a {
+    display: flex;
   }
 
   header {
@@ -348,7 +393,7 @@ footer .wrapper section div ul li a:focus::before {
 
   header .logo-container {
     position: absolute;
-    width: 100px;
+    width: auto;
     height: 100%;
   }
 
@@ -365,11 +410,7 @@ footer .wrapper section div ul li a:focus::before {
     transform: translateY(20vh);
   }
 
-  .invisible-checkbox:checked + body {
-    height: 100vh !important;
-    overflow-y: hidden !important;
-    position: fixed !important;
-  }
+
   .nav-header ul {
     position: fixed;
     z-index: 10;

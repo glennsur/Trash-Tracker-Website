@@ -1,11 +1,15 @@
 
 /* =========== HERO/Image =========== */
-
+html {
+  scroll-padding-top: 400px;
+}
 
 /* =========== Sections =========== */
 
-a {
-  color: #377e4c;
+main a {
+  color: #377e4c !important;
+  cursor: pointer;
+  pointer-events: initial;
 }
 
 main section {
@@ -57,7 +61,6 @@ main section:nth-child(1) .text h2 {
 
 main section:nth-child(2) {
   min-height: 500px;
-  margin-top:-50px;
   background-color: white;
 }
 
