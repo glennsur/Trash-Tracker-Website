@@ -55,9 +55,11 @@ main a {
   text-decoration: underline;
   text-underline-position: under;
 }
+
 .pointer-events-auto {
   pointer-events: auto;
 }
+
 .pointer-events-default {
   pointer-events: auto;
   color: #377e4c;
