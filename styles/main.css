@@ -14,7 +14,6 @@
 }
 
 :root {
-  --green-color: #32543c;
   --green-color: #377e4c;
 }
 
@@ -289,7 +288,7 @@ footer .wrapper section {
   flex-direction: column;
   width: 30%;
   height: 100%;
-  letter-spacing: 1.5px;
+  letter-spacing: 1.6px;
   color: #FFF;
   background-color: transparent;
 }
@@ -408,17 +407,15 @@ footer .wrapper section div ul li a:focus::before {
   }
 
   .invisible-checkbox:checked + ul {
-    transition: transform 1s ease-in-out;
+    transition: transform 0.7s ease-in-out;
     transform: translateY(20vh);
   }
-
 
   .nav-header ul {
     position: fixed;
     z-index: 10;
     top: 0;
     left: 0;
-    display: none;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -452,7 +449,6 @@ footer .wrapper section div ul li a:focus::before {
     background-repeat: no-repeat;
     background-position: center;
     background-size: 30%;
-
   }
 
   .nav-header ul li {
