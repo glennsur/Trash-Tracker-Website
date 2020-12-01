@@ -1,15 +1,22 @@
 
-/* =========== HERO/Image =========== */
+/* =========== General =========== */
+
 html {
-  scroll-padding-top: 400px;
+  scroll-padding-top: 100px;
 }
 
 /* =========== Sections =========== */
 
 main a {
-  color: #377e4c !important;
+  color: #377e4c ;
   cursor: pointer;
   pointer-events: initial;
+  word-wrap: break-word;
+}
+
+main h2 a {
+  color: #0A0D0E;
+  pointer-events: none;
 }
 
 main section {
@@ -92,7 +99,7 @@ main section:nth-child(2) .text h2 {
 /* =========== Section 3 =========== */
 
 main section:nth-child(3) {
-  min-height: 500px;
+  min-height: 100px;
   margin:50px 0;
   background-color: white;
 }
@@ -126,12 +133,8 @@ main section:nth-child(3) .text h2 {
 
 /* =========== Media Query =========== */
 
-@media (max-width: 1380px) {
-  .real-section-1 img {
-    width: 100%;
-  }
-
-  .real-section-2 img {
-    width: 100%;
+@media (max-width: 760px) {
+  main section:nth-child(1){
+    padding: 140px 0 0 0;
   }
 }
